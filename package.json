@@ -1,0 +1,32 @@
+{
+  "name": "es6-and-typescript",
+  "version": "1.0.0",
+  "description": "Learning about ES 6",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.23.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anbinhtrong/Es6AndTypescriptExample.git"
+  },
+  "keywords": [
+    "git",
+    "ts6"
+  ],
+  "scripts": {
+     "build": "babel src -d lib"
+   },
+  "author": "Minh Tam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anbinhtrong/Es6AndTypescriptExample/issues"
+  },
+  "homepage": "https://github.com/anbinhtrong/Es6AndTypescriptExample#readme"
+}
