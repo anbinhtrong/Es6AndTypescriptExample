@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Class</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+
+        get area() {
+            return this.calcArea();
+        }
+
+        calcArea() {
+            return this.height * this.width;
+        }
+    }
+
+    const square = new Rectangle(10, 10);
+
+    console.log(square.area);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Loop example</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    class Person {
+        constructor() {
+            this._name = '';
+        }
+
+        get name() {
+            return this._name;
+        }
+
+        set name(value){
+            this._name = value;
+        }
+    }
+
+    //let people: Array<Person> = [];
+    let people = [];
+
+    let person1 = new Person();
+    person1.name = "Zhao Ming Xin";
+
+    let person2 = new Person();
+    person2.name = "Xue Ying";
+
+    people.push(person1);
+    people.push(person2);
+    console.log("for----")
+    for(let person of people){
+        console.log(person.name)
+    }
+
+    console.log("forEach----");
+
+    people.forEach(function(x) {
+        console.log(x.name);       
+    });
+
+    console.log('=>..')
+
+    people.forEach((x)=> console.log(x.name));
+    </script>
+</body>
+
+</html>
